@@ -25,7 +25,7 @@ A fintech lends personal loans graded A (lowest risk) to G (highest risk), at 36
 
 ## 🗂️ Data Source
 
-Google's public BigQuery dataset `cloud-training-demos.fintech`. Three tables are used:
+The [BigQuery Fintech Dataset](https://www.kaggle.com/datasets/mustafakeser4/bigquery-fintech-dataset) on Kaggle. The CSVs were loaded into BigQuery (`fintech_raw`) from the notebook. Three tables are used:
 
 - `loan` — 270,299 loans issued 2012–2019: amount, rate, term, installment, grade, purpose, status
 - `customer` — one row per borrower: income, employment length, home ownership, income verification, existing debt
@@ -63,7 +63,7 @@ After cleaning, 270,292 loans remain. The raw CSVs are not included in this repo
 
 Built in **Data Studio**, Google's free BI tool, called **Looker Studio** until April 2026 (same product, new name).
 
-**[▶ Open the interactive dashboard](https://datastudio.google.com/reporting/bcfc4c3a-03a6-4b3b-af2e-5fca35f0f145)** · [PDF version](dashboard/fintech_dashboard.pdf)
+**[▶ Open the interactive dashboard](PASTE-YOUR-DASHBOARD-LINK-HERE)** · [PDF version](dashboard/fintech_dashboard.pdf)
 
 | Page | What it shows |
 |---|---|
@@ -117,7 +117,7 @@ Python (pandas, numpy, matplotlib, seaborn, scipy, statsmodels) · Google BigQue
    pip install -r requirements.txt
    ```
 3. **Set up Google Cloud**: create a project, enable BigQuery, create the datasets `fintech_raw` and `fintech_clean`, and authenticate with `gcloud auth application-default login`.
-4. **Get the data**: export the tables `loan`, `customer` and `state_region` from `cloud-training-demos.fintech` as CSV and save them in `data/raw/`.
+4. **Get the data**: download the [BigQuery Fintech Dataset](https://www.kaggle.com/datasets/mustafakeser4/bigquery-fintech-dataset) from Kaggle (free account required; **Download** button), unzip it and copy `loan.csv`, `customer.csv` and `state_region.csv` into `data/raw/`. If the file names differ, rename them to these three.
 5. **Point the notebook to your project**: replace `fintech-510922` with your project ID (Find and Replace in the notebook) and run it top to bottom. Step 1 uploads the CSVs to `fintech_raw`; Step 9 creates the two dashboard views.
 6. **Rebuild the dashboard (optional)**: in Data Studio (datastudio.google.com, formerly Looker Studio), connect `view_loan`, `dash_regla_aprobacion` and `dash_cobranza` from your `fintech_clean` dataset.
 
@@ -125,4 +125,4 @@ Python (pandas, numpy, matplotlib, seaborn, scipy, statsmodels) · Google BigQue
 
 ## 📬 Contact
 
-**Camilo Rojas** — [LinkedIn](https://www.linkedin.com/in/camilo-andres-rojas-rojas) — [camilo35546@gmail.com](mailto:camilo35546@gmail.com)
+**Camilo Rojas** — [LinkedIn](PASTE-YOUR-LINKEDIN-URL-HERE) — [camilo35546@gmail.com](mailto:camilo35546@gmail.com)
