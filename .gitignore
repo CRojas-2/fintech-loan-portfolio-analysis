@@ -1,0 +1,19 @@
+# Data: raw CSVs stay on your computer, not on GitHub
+data/
+
+# Python virtual environment and caches
+.venv/
+venv/
+__pycache__/
+
+# Jupyter autosaves
+.ipynb_checkpoints/
+
+# Credentials: never upload these
+*.json
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
