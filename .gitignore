@@ -1,4 +1,4 @@
-# Data: raw CSVs stay on your computer, not on GitHub
+# Data: raw CSVs from Kaggle stay on your computer, not on GitHub
 data/
 
 # Python virtual environment and caches
